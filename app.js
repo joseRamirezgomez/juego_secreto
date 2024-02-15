@@ -1,7 +1,7 @@
 let numeroSecreto = 0;
 let intentos = 0;
 let listaNumerosSorteados = [];
-let numberMax = 3;
+let numberMax = 10;
 function asignarTextoElemento(elemento, texto){
     let elementoHTML = document.querySelector(elemento);
     elementoHTML.innerHTML = texto;
@@ -35,7 +35,6 @@ function condicionesiniciales(){
     asignarTextoElemento('p',`Indica un numero del 1 al ${numberMax}.`);
     intentos=1;
     numeroSecreto =generarNumeroSecreto();
-    console.log(numeroSecreto);
 }
 function reiniciar() {
     limpiarCampo();
